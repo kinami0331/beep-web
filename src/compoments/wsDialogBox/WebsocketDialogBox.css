@@ -1,0 +1,30 @@
+.websocketDialogBox {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border: 1px solid #006;
+}
+
+.chatBox {
+  position: absolute;
+  left: 150px;
+  width: 350px;
+  height: 300px;
+  /* border: 1px solid #0ff; */
+}
+
+.basicInfo {
+  position: absolute;
+  left: 0px;
+  width: 150px;
+  height: 300px;
+  /* border: 1px solid #0ff; */
+}
+
+.chatRecordBox {
+  height: 200px;
+  width: 350px;
+  border: 1px solid #006; /* 使用边框，区分内容*/
+  overflow-y: scroll; /*显示y轴滚动条*/
+  overflow-x: hidden; /*隐藏x轴滚动条*/
+}
