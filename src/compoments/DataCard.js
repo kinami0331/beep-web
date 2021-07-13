@@ -35,6 +35,7 @@ const DataCard = (props) => {
                     (response) => {
                         // console.log(response.data.data);
                         setExprFull(response.data.data);
+                        console.log(response);
                     }
                 )
         })()

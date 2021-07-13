@@ -35,16 +35,18 @@ const DataPresentation = () => {
 
     let dataGroupCardList = [];
     if (curExpr != null) {
-        let rdm = Math.random()+""
+        let rdm = Math.random() + ""
         dataGroupCardList = curExpr.beepMultiExprList.map((expr, idx) => {
             const exprInfo = {
                 "chirpParameters": expr.chirpParameters,
                 "deviceList": curExpr.deviceList,
                 "exprIdList": expr.exprIdList,
-                "realDistance": curExpr.realDistance
+                "realDistance": curExpr.realDistance,
+                "imageList": curExpr.imageList,
+                "imageDescriptionList": curExpr.imageDescriptionList
             }
             // console.log(exprInfo);
-            return <DataGroupCard key={idx+rdm} exprInfo={exprInfo}/>
+            return <DataGroupCard key={idx + rdm} exprInfo={exprInfo}/>
 
         })
 
